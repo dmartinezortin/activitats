@@ -9,6 +9,7 @@ def print_multiple(n):
     print([n * x for x in range(100) if (n * x) < 100])
 
 
+
 def main():
 
     n = request_num()
