@@ -1,11 +1,10 @@
 import functions as f
 
-
-
 def main():
 
-    n = f.request_value()
-    f.print_multiple(n)
+    dna = input("Introdueix el DNA: ")
+
+    f.check_format(dna)
 
 if __name__ == '__main__':
     main()
