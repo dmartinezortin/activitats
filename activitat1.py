@@ -1,17 +1,9 @@
-def request_values():
-    aux_list = list()
-    value = ''
-    while value != "#":
-        value = input("Introdueix un valor(# per finalitzar): ")
-        if value != "#":
-            aux_list.append(int(value))
-
-    return aux_list
+import functions as f
 
 
 def main():
 
-    main_list = request_values()
+    main_list = f.request_values()
 
     print(sum(main_list))
 
