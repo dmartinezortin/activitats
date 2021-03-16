@@ -35,26 +35,25 @@ def request_values():
 
 #Comprova si el DNA te un format correcte.
 
-def check_format(dna):
-    valid_characters = ['A','C','T','G']
+def check_format(string_to_validate, valid_characters):
     count = 0
-    size = len(dna)
-    dna = list(dna.upper())
-    for x in dna:
+    size = len(string_to_validate)
+    dna = list(string_to_validate.upper())
+    for x in string_to_validate:
         if x in valid_characters:
             count += 1
     if size == count:
         print("El format de la seqüencia és vàlida!")
     else:
         print("El format de la seqüencia no és vàlida!")
-
+#Recoge el valor mas grande de una lista
 def greater(main_list):
     greater_value = main_list[0]
     for x in main_list:
         if x > greater_value:
             greater_value = x
     return greater_value
-
+#Recoge el valor mas pequeño de una lista
 def lower(main_list):
     lower_value = main_list[0]
     for x in main_list:
