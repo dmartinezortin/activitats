@@ -60,3 +60,47 @@ def lower(main_list):
         if x < lower_value:
             lower_value = x
     return lower_value
+
+def check_user(main_list):
+    username = input("Quin es el teu usuari?")
+    if username == main_list[2]:
+        print("El usuari coincideix.")
+    else:
+        print("El usuari no coincideix.")
+
+def check_perms(main_list):
+    perms = main_list[0]
+    #Comprova permisos de lectura de usuari
+    if perms[1] == 'r':
+        print("L'usuari te permisos de lectura")
+    else:
+        print("/!\ L'usuari no te permisos de lectura")
+    #Comprova permisos de escritura de usuari
+    if perms[2] == 'w':
+        print("L'usuari te permisos de escritura")
+    else:
+        print("/!\ L'usuari no te permisos de lectura")
+    if perms[3] == 'x':
+        print("L'usuari te permisos de execució")
+    else:
+        print("/!\ L'usuari no te permisos de execució")
+    if perms[4] == 'r':
+        print("El grup te permisos de lectura")
+    else:
+        print("/!\ El grup no te permisos de lectura")
+    #Comprova permisos de escritura de usuari
+    if perms[4] == 'w':
+        print("El grup te permisos de escritura")
+    else:
+        print("/!\ El grup no te permisos de lectura")
+    if perms[6] == 'x':
+        print("El grup te permisos de execució")
+    else:
+        print("/!\ El grup no te permisos de execució")
+
+def check_filename(main_list):
+    filename = input("Quin es el nom del fitxer per revisar permisos: ")
+    if filename == main_list[-1]:
+        print("El nom del fitxer coincideix")
+    else:
+        print("/!\ El nom del fitxer no coincideix")
