@@ -105,3 +105,29 @@ def check_filename(main_list):
     else:
         print("/!\ El nom del fitxer no coincideix")
 
+def insert_dictionary(main_dict, total):
+    for x in range(total):
+        student_id = 0
+        while student_id < 1:
+            student_id = int(input("ID de l'estudiant? "))
+        name = input("Quin es el nom de l'alumne? ")
+        last_name = input("Quin es el cognom de l'alumne? ")
+        subject = input("Quina es la materia de l'alumne? ")
+        grade = input("Quina es la nota de l'alumne? ")
+        aux_dict = {x:
+                        {'Student_ID': student_id,
+                        'first_name': name,
+                        'last_name': last_name,
+                        'subject': subject,
+                        'grade': grade}
+                    }
+        main_dict.update(aux_dict)
+        print(main_dict)
+    return main_dict
+
+def print_dict(main_dict):
+    print("student_id", "first_name", "last_name", "subject", "grade")
+    for key, value in main_dict.items():
+        for x, y in value.items():
+            print(y, "\t\t", end='')
+        print()
