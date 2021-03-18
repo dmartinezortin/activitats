@@ -64,15 +64,15 @@ def lower(main_list):
 def check_user(main_list):
     username = input("Quin es el teu usuari?")
     if username == main_list[2]:
-        print("El usuari coincideix.")
+        print("L'usuari coincideix.")
     else:
-        print("El usuari no coincideix.")
+        print("L'usuari no coincideix.")
 
 def check_perms(main_list):
     perms = main_list[0]
     #Comprova permisos de lectura de usuari
     if perms[1] == 'r':
-        print("L'usuari te permisos de lectura")
+        print("L'usuari té permisos de lectura")
     else:
         print("/!\ L'usuari no te permisos de lectura")
     #Comprova permisos de escritura de usuari
@@ -104,3 +104,4 @@ def check_filename(main_list):
         print("El nom del fitxer coincideix")
     else:
         print("/!\ El nom del fitxer no coincideix")
+
