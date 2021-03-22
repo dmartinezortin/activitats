@@ -1,6 +1,7 @@
 def welcome_menu():
     print("╔════════════════════════════╗\n║         MAIN MENU          ║\n╚════════════════════════════╝")
 
+
 #Demana un numero del 1 al 10
 def request_value():
 
@@ -131,3 +132,7 @@ def print_dict(main_dict):
         for x, y in value.items():
             print(y, "\t\t", end='')
         print()
+
+def generate_list(min, max):
+    generated_list = list([x* 2 if x%2 == 0 else x//5 for x in range(min, max+1)])
+    return generated_list
