@@ -9,7 +9,6 @@ def welcome_menu():
           "║                                                            ║\n"
           "╚════════════════════════════════════════════════════════════╝")
 
-
 #Demana un numero del 1 al 10
 def request_value():
 
