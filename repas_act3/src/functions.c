@@ -23,8 +23,7 @@ void insertValues(int *arr, int n){
 	int i;
 	for(i=0;i<n;i++){
 		printf("Introdueix un valor: ");
-		scanf("%d", arr);
-		arr++;
+		scanf("%d", arr+i);
 	}
 }
 
